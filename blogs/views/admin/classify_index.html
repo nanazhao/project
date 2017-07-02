@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{%block main%}
+<ol class="breadcrumb">
+    <li><a href="#">管理首页</a></li>
+    <li><a href="#">分类列表</a></li>
+</ol>
+<h3>分类列表</h3>
+<table class="table table-hover">
+    <tr>
+        <th>ID</th>
+        <th>分类名称</th>
+        <th>操作</th>
+    </tr>
+    {% for user in classifys %}
+    <tr>
+        <td>{{user._id.toString()}}</td>
+        <td>{{user.name}}</td>
+        <td>
+            <a href="/admin/classify/edit?id={{user._id.toString()}}">修改</a>
+            <a href="/admin/classify/delete?id={{user._id.toString()}}"> | 删除</a>
+        </td>
+        <td>
+            {%if user.isadmin %}
+            是
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% include "page.html" %}
+
+{%endblock%}

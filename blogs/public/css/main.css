@@ -1,0 +1,185 @@
+body,h1,h4,p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+input {
+    outline: none;
+    padding: 0;
+    border: 0;
+}
+body {
+    background: #000 url('../image/yellow.jpg') no-repeat;
+}
+.afterFix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+#header {
+    position: relative;
+    height: 200px;
+    background: url("../image/kehu-bg.jpg") repeat-x;
+}
+#header div {
+    position: absolute;
+    left: 41%;
+    top: 3%;
+    width: 60px;
+    height: 50px;
+    background: url('../image/logo.png') no-repeat;
+}
+#header h1 {
+    text-align: center;
+    width: 60%;
+    font: bold 20px/50px "宋体";
+    margin: 0 auto;
+}
+#navwrap {
+    background: #DDD;
+    border-bottom: 2px solid #999;
+}
+#navlist {
+    width: 1202px;
+    margin: 0 auto;
+}
+#navlist li {
+    float: left;
+    width: 198px;
+    font: 16px/30px "微软雅黑";
+    text-align: center;
+    border-left: 1px solid #000;
+}
+#navlist li:first-child {
+    border-left: 0;
+}
+#navlist li a {
+    display: block;
+    width: 198px;
+    color: #000;
+}
+#secwrap {
+    width: 100%;
+    text-align: center;
+}
+#secleft {
+    float: left;
+    width: 20%;
+}
+#seccenter {
+    float: left;
+    width: 60%;
+    background: bule;
+}
+#secright {
+    float: left;
+    width: 20%;
+    background: red;
+}
+#form {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #f29953;
+    padding: 10px;
+    background: #fff;
+}
+#form div {
+    margin-top: 10px;
+}
+#form span {
+    float: left;
+    font: bold 14px/20px "微软雅黑";
+}
+#form input {
+    width: 60%;
+    font: 14px/20px "微软雅黑";
+    border: 1px solid #000;
+}
+#form strong {
+    font: 12px/20px "微软雅黑";
+    font-weight: normal;
+}
+#form .enter {
+    margin-top: 40px;
+    padding-left: 20px;
+}
+#form2 {
+    display: none;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #f29953;
+    padding: 10px;
+    background: #fff;
+}
+#form2 div {
+    margin-top: 10px;
+}
+#form2 span {
+    float: left;
+    font: bold 14px/20px "微软雅黑";
+}
+#form2 input {
+    width: 60%;
+    font: 14px/20px "微软雅黑";
+    border: 1px solid #000;
+}
+#form2 strong {
+    font: 12px/20px "微软雅黑";
+    font-weight: normal;
+}
+#form2 .enter {
+    margin-top: 40px;
+    padding-left: 20px;
+}
+#form3 {
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid #f29953;
+    padding: 10px;
+    background: #fff;
+}
+#form3 div {
+    margin-top: 10px;
+}
+.enter input {
+    width: 40%;
+    background: #a23122;
+    color: #fff;
+}
+#zhushi {
+     font: 12px/20px "微软雅黑";
+ }
+#zhushi2 {
+    font: 12px/20px "微软雅黑";
+}
+#zhushi3 {
+    font: 12px/20px "微软雅黑";
+}
+.hidden {
+    display: none;
+}
+#seccenter h4 {
+    font: bold 14px/20px "微软雅黑";
+}
+#seccenter time {
+    display: block;
+    text-align: right;
+    font: 12px/20px "微软雅黑";
+}
+#seccenter li {
+    border: 2px solid #bbb;
+    margin: 20px;
+    background: #ddd;
+}
+#seccenter p {
+    text-indent: 20px;
+    text-align: left;
+    font: 12px/20px "微软雅黑";
+}

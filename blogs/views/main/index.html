@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <script src="/public/js/jquery-1.12.4.min.js"></script>
+    <script src="/public/js/index.js"></script>
+</head>
+<body>
+<header>
+    <div id="header">
+        <div></div>
+        <h1>欢迎来到我的博客</h1>
+    </div>
+    <nav id="navwrap">
+        <ul id="navlist" class="afterFix">
+            <li><a href="#">首页</a></li>
+            {% for red in reds %}
+            <li><a href="#">{{red.name}}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
+<section id="secwrap" class="afterFix">
+    <div id="secleft">
+        {% if goback._id %}
+        <form action="" id="form3">
+            {% if goback.isadmin %}
+            <div>你好！管理员!!!!!<span></span> <br><a href="javascript:;">进入管理页面</a></div>
+            {% else %}
+            <div>你好！<span></span></div>
+            {% endif %}
+            <div>
+                <a href="javascript:;" class="signout">退出</a>
+            </div>
+        </form>
+        {% else %}
+        <form action="" id="form">
+            <div class="user afterFix">
+                <span>用户名:</span>
+                <input type="text" name="username">
+            </div>
+            <div class="pass afterFix">
+                <span>密码:&nbsp&nbsp&nbsp</span>
+                <input type="password" name="password">
+            </div>
+            <div class="enter">
+                <input type="button" value="登录">
+            </div>
+            <strong class="btntip"></strong>
+            <p id="zhushi">新用户注册请点击&nbsp&nbsp&nbsp<a href="javascript:;">用户注册</a></p>
+        </form>
+        <form action="" id="form2" class="hidden">
+            <div class="user afterFix">
+                <span>用户名:&nbsp&nbsp&nbsp</span>
+                <input type="text" name="username">
+            </div>
+            <strong class="usertip"></strong>
+            <div class="pass afterFix">
+                <span>密码:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                <input type="password" name="password">
+            </div>
+            <strong class="passtip"></strong>
+            <div class="repass afterFix">
+                <span>重复密码:</span>
+                <input type="password" name="repassword">
+            </div>
+            <strong class="repasstip"></strong>
+            <div class="enter">
+                <input type="button" value="登录" id="btn">
+            </div>
+            <strong class="btntip"></strong>
+            <p id="zhushi2">新用户注册请点击&nbsp&nbsp&nbsp<a href="javascript:;">用户登录</a></p>
+        </form>
+        {% endif %}
+    </div>
+    <ul id="seccenter">
+        <li>
+            <h4>阿萨德撒多撒多</h4>
+            <p><a href="">asdasldal啊肯定马上离开的马萨拉蒂马萨拉蒂没撒旦撒都没萨达姆萨达姆萨达姆撒撒大声地萨达姆撒德玛上单没了萨摩打脸萨没电了萨满的拉萨的马萨拉蒂马萨拉蒂弥撒都没</a></p>
+            <time>2016-08-14  12:30:24</time>
+        </li>
+    </ul>
+    <div id="secright">
+        11111<br />1111<br />11111111v<br />111111<br />1111231<br />232131<br />231231<br />213123<br />12321321
+    </div>
+</section>
+<footer></footer>
+</body>
+</html>
