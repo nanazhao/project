@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{%block main%}
+<ol class="breadcrumb">
+    <li><a href="#">管理首页</a></li>
+    <li><a href="#">添加分类</a></li>
+</ol>
+<h3>错误提示</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">错误提示</h3>
+    </div>
+    <div class="panel-body">
+        {{message}}
+    </div>
+    {% if url %}
+    <div class="panel-footer"><a href="{{url}}">跳转上一步</a></div>
+    {%else%}
+    <div class="panel-footer"><a href="javascript:window.history.go(-1);">返回上一步</a></div>
+    {%endif%}
+
+</div>
+
+{%endblock%}
